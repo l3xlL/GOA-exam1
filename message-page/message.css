@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #141D2F;
+
+    box-sizing: border-box;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ty-msg {
+    background-color: #1E2A47;
+
+    padding: 50px;
+    margin: 50px auto;
+
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ty-msg h1 {
+    color: #007bff;
+    font-size: 35px;
+}
+
+.ty-msg p {
+    font-size: 19px;
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    border: 1px #007bff solid;
+    border-radius: 10px;
+    background-color: #007bff;
+
+    height: 40px;
+    width: 130px;
+
+    text-decoration: none;
+    color: white;
+
+    font-weight: 350;
+}
+
+@media screen and (max-width: 390px) {
+
+    .ty-msg {
+        width: 250px;
+    }
+}

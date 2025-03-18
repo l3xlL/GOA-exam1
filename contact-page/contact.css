@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #141D2F;
+
+    box-sizing: border-box;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.headerr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+    background: #1E2A47;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.logogram {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    font-weight: bold;
+    color: #0079FF;
+    
+}
+
+.btns {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btns .header-a {
+    gap: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 20px;
+    
+    font-size: 17px;
+    transition: 0.3s ease-in-out;
+}
+
+.btns .header-a:hover {
+    font-size: 23px;
+    color: #007bff;
+}
+
+
+/* DIVIDER: CONTACT INFO */
+
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 50px;
+    
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    width: 100%;
+    background-color:#1E2A47;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #1e2a4791;
+    border-radius: 4px;
+    font-size: 16px;
+
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.btn {
+    height:30px;
+    width: 100px;
+
+    background-color: #141D2F;
+    color: white;
+
+    border: 1px;
+    border-radius: 10px;
+    padding: 13px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+
+    font-family: "Josefin Sans", sans-serif;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    background-color: #007bff;
+}
+
+
+/* DIVIDER: FOOTER */
+
+
+footer {
+    background-color: #1E2A47;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 390px) {
+
+    .logogram {
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    
+        font-size: 20px;
+        font-weight: bold;
+    
+        font-weight: bold;
+        color: #0079FF;
+        
+    }
+
+}

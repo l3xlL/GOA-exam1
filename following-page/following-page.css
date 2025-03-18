@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141D2F;
+    box-sizing: border-box;
+}
+
+.txt {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+
+    color: white;
+
+    margin-left: 500px;
+    margin-top: 200px;
+}
+
+
+/* DIVIDER: NAVBAR */
+
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.headerr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+    background: #1E2A47;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.logogram {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    font-weight: bold;
+    color: #0079FF;
+    
+}
+
+.btns {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btns .header-a {
+    gap: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 20px;
+    
+    font-size: 17px;
+    transition: 0.3s ease-in-out;
+}
+
+.btns .header-a:hover {
+    font-size: 23px;
+    color: #007bff;
+}
+
+
+/* DIVIDER: BUTTON */
+
+.btn {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: medium;
+
+    background-color: #0079FF;
+    color: white;
+    cursor: pointer;
+
+    border: solid #0079FF 2px;
+    border-radius: 20px;
+
+    height: 62px;
+    width: 100px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    height: 65px;
+    width: 103px;
+
+    box-shadow: 5px 5px 15px #0f1625;
+}
+
+
+/* DIVIDER: MAIN / FOLLOWING */
+
+.main {
+    width: 786px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: #1E2A47;
+    background: linear-gradient(360deg, #141D2F, #1E2A47);
+
+    
+    position: relative;
+    margin-left: 500px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.following {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    color: white;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+
+    width: 600px;
+    transition: 0.5s ease-in-out;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile p {
+    color: white;
+    font-size: 18px;
+}
+
+.profile:nth-child(1) { opacity: 1; }
+.profile:nth-child(2) { opacity: 0.5; }
+.profile:nth-child(3) { opacity: 0.2; }
+
+
+.folv {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+
+    background-color: #0079FF;
+    color: white;
+    cursor: pointer;
+
+    border: solid #0079FF 2px;
+    border-radius: 20px;
+
+    height: 56px;
+    width: 70px;
+
+    transition: 0.3s ease-in-out;
+
+    padding-left: 20px;
+
+    text-decoration: none;
+}
+
+.folv:hover {
+    height: 59px;
+    width: 73px;
+
+    padding-left: 23px;
+
+    box-shadow: 5px 5px 15px #0f162583;
+}
+
+.user-goa {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: white;
+    text-decoration: none;
+
+    padding-right: 55px;
+}
+
+.no-user {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #ffffff27;
+}
+
+.more {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: #1E2A47;
+    padding: 10px;
+    border-radius: 10px;
+
+    color: #0c121f;
+
+    cursor:not-allowed;
+}
+
+@media screen and (max-width: 390px) {
+
+    .logogram {
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    
+        font-size: 20px;
+        font-weight: bold;
+    
+        font-weight: bold;
+        color: #0079FF;
+        
+    }
+
+    .main {
+        width: 320px;
+
+        height: auto;
+        min-height: 400px;
+
+        margin: 0px 0px 0px auto;
+        margin-right: 30px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .profile-container {
+        width: 100%;
+        
+        align-items: flex-end;
+        padding-right: 10px;
+    }
+
+    .profile {
+        width: 300px;
+        max-width: 280px;
+        margin-left: auto;
+        box-sizing: border-box;
+    }
+
+    .following {
+        text-align: right;
+        width: 100%;
+        padding-right: 15px;
+    }
+
+    .folv {
+        margin-left: auto;
+    }
+
+    .user-goa {
+        padding-right: 20px;
+    }
+
+    .content-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+        .header-cont {
+            margin-left: 15px;
+            margin-right: auto;
+            text-align: left;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .txt {
+            margin-left: 15px;
+            margin-right: auto;
+            margin-top: 20px;
+            text-align: left;
+            width: auto;
+        }
+
+        .more {
+
+            margin-right: 75px;
+        
+        }
+
+        .folv {
+            padding-right: 20px;
+        }
+    
+    }
