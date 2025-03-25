@@ -9,7 +9,7 @@ def gamravleba(x, y):
 
 def gayofa(x, y):
     if y == 0:
-        return "0ze gayofa ar sheidzleba!"
+        return "0ze gayofa ar sheidzleba"
     return x / y
 
 def calculator():
@@ -21,17 +21,17 @@ def calculator():
 
     choice = input("airchie (1/2/3/4): ")
 
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+    num1 = float(input("enter first number: "))
+    num2 = float(input("enter second number: "))
 
     if choice == '1':
-        print(f"{num1} + {num2} = {damateba(num1, num2)}")
+        print(str(num1) + " + " + str(num2) + " = " + str(damateba(num1, num2)))
     elif choice == '2':
-        print(f"{num1} - {num2} = {gamokleba(num1, num2)}")
+        print(str(num1) + " - " + str(num2) + " = " + str(gamokleba(num1, num2)))
     elif choice == '3':
-        print(f"{num1} * {num2} = {gamravleba(num1, num2)}")
+        print(str(num1) + " * " + str(num2) + " = " + str(gamravleba(num1, num2)))
     elif choice == '4':
-        print(f"{num1} / {num2} = {gayofa(num1, num2)}")
+        print(str(num1) + " / " + str(num2) + " = " + str(gayofa(num1, num2)))
     else:
         print("error")
 

@@ -7,17 +7,14 @@ def magic_8_ball():
         "maybe",
         "definitely not",
         "ask again later",
-        "cannot predict now",
-        "most likely",
-        "don't count on it"
+        "most likely"
     ]
     
-    question = input("Ask a question: ")
+    question = input("ask a question: ")
     
     answer = random.choice(answers)
     
-    print(f"You asked: {question}")
-    print("The magic 8 ball says:", answer)
+    print("the magic 8 ball says:", answer)
 
 
 magic_8_ball()
