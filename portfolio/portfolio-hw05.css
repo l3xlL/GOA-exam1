@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #010101;
+    color: white;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Courier New', monospace;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: red;
+}
+
+
+
+
+
+/* DIVIDER: NAVBAR */
+
+
+
+
+
+.navbar {
+    padding: 15px 30px;
+    position: sticky;
+
+    top: 0;
+
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        background: linear-gradient(to bottom, rgb(34, 34, 34) 0%, rgba(255, 255, 255, 0) 90%);
+        color: black;
+        padding: 20px;
+        height: 115px;
+
+        font-family: "Underdog", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    
+}
+
+.port {
+    height: 55px;
+
+    transition: 0.3s ease-in-out;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Upward movement */
+    }
+    100% {
+      transform: translateY(0); /* Back to original position */
+    }
+  }
+
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .nav-links li a:hover {
+    color: #c50000;
+    transition: 0.3s ease-in-out;
+    font-size: 1.15em;
+}
+
+
+
+
+
+
+/* 
+DIVIDER */
+
+
+
+
+
+#hero {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black;
+    padding-right: 5px;
+    animation: typing 4s steps(30) 1s 1 normal both, 0.75s step-end infinite;
+}
+
+
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    80% {
+        border-color: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+
+
+
+.cta-button {
+
+    padding: 15px 25px;
+    margin-left: 10px;
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    transition: 0.3s ease-in-out;
+
+}
+
+.cta-button:hover {
+    font-size: 1.3em;
+    background-color: darkred;
+    
+}
+
+.dn {
+    height: 150px;
+    margin-bottom: 40px;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+
+
+
+/* DIVIDER: PORTFOLIO */
+
+
+
+
+#portfolio1 {
+    height: 100%;
+
+    margin-top: 300px;
+}
+
+.portfolio1 {
+    margin-left: 450px;
+}
+
+.bodyimg {
+    float: right;
+    margin-right: 420px;
+
+    opacity: 0.85;
+    margin-top: 40px;
+}
+
+.L1 {
+    margin-top: 30px;
+}
+
+.porttext {
+    font-size: 1.51rem;
+    margin-top: 40px;
+    margin-right: 50px;
+
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+
+/* PORT2 */
+
+
+
+
+
+.div2 {
+    height: 250px;
+    width: auto;
+}
+
+
+
+
+#portfolio2 {
+    height: 100%;
+}
+
+.portfolio2 img {
+    margin-bottom: 40px;
+
+
+    display: block;
+    margin: 0 auto;
+
+    height: 65px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+
+    gap: 90px;
+
+    margin-left: 40px;
+    margin-top: 170px;
+
+    list-style-type: none;
+}
+
+.skills li {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.3rem;
+
+
+    position: relative;
+    cursor: pointer;
+
+
+    font-weight: 400;
+    
+    font-style: normal;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.skills li::after {
+    content: "";
+    position: absolute;
+
+    bottom: -5px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    width: 0px;
+    height: 2px;
+
+    background-color: rgba(139, 0, 0, 0.733);
+    transition: width 0.3s ease-in-out;
+    
+}
+
+
+.skills li:hover {
+    text-decoration: none;
+}
+
+.skills li:hover::after {
+
+    width: 400px;
+}
+
+
+.skills li::before {
+    content: attr(data-info);
+
+    position: absolute;
+
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+
+
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    opacity: 0;
+
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    white-space: pre-wrap;
+
+    word-wrap: break-word;
+}
+
+
+
+.skills li:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+/* DIVIDER: CONTACT INFO */
+
+
+
+
+
+.contact {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 13px;
+
+    width: 100%;
+    max-width: 600px;
+
+    margin: 0 auto;
+    text-align: center;
+
+    margin-bottom: 150px;
+
+}
+
+
+.contact h2 {
+    font-size: 2.5rem;
+
+    color: black;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #12171b;
+    outline: none;
+    box-shadow: 0 0 13px rgb(63, 0, 0);
+}
+
+
+
+
+textarea {
+    height: 150px;
+    resize: none;
+
+    background-color: #a1a1a1;
+}
+
+.contact a {
+    background-color: #007bff00;
+    color: white;
+
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+
+    text-decoration: none;
+}
+
+.contact a:hover {
+    background-color: rgb(124, 0, 0);
+}
+
+
+input[type="text"],
+input[type="email"] {
+    background-color: #a1a1a1;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.692);
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+
+.contact img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* RESPONSIVE FOR LATER */
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+}
